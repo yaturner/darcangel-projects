@@ -1,0 +1,37 @@
+---
+layout: layout.njk
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "/{{ project.slug }}/"
+eleventyComputed:
+  title: "{{ project.name }} — {{ site.title }}"
+  description: "{{ project.tagline }}"
+---
+<article class="project">
+  <p class="crumb"><a href="/">&larr; all projects</a></p>
+
+  <header class="project-head">
+    <h1>{{ project.name }}</h1>
+    <p class="tagline">{{ project.tagline }}</p>
+    <p class="links">
+      <a href="{{ project.url }}">Repository</a>
+      <a href="{{ project.url }}/releases">Releases</a>
+      <a href="{{ project.url }}#readme">README on GitHub</a>
+    </p>
+    {%- if project.tags and project.tags.length %}
+    <p class="tags">
+      {%- for t in project.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+    </p>
+    {%- endif %}
+  </header>
+
+  {%- if project.screenshot %}
+  <img class="hero" src="{{ project.screenshot }}" alt="{{ project.name }} screenshot" />
+  {%- endif %}
+
+  <div class="readme">
+    {{ readmes[project.slug] | safe }}
+  </div>
+</article>

@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "weatherpanel",
+    "name": "myWeatherPanel",
+    "tagline": "An LED-matrix weather and news panel for a Raspberry Pi.",
+    "owner": "yaturner",
+    "repo": "myWeatherPanel",
+    "branch": "master",
+    "url": "https://github.com/yaturner/myWeatherPanel",
+    "screenshot": "/assets/projects/weatherpanel.jpg",
+    "status": "active",
+    "tags": ["python", "raspberry-pi", "rgb-led-matrix"]
+  },
+  {
+    "slug": "tcamdesktop",
+    "name": "tcamDesktop",
+    "tagline": "TODO: one line describing tcamDesktop.",
+    "owner": "yaturner",
+    "repo": "tcamDesktop",
+    "branch": "main",
+    "url": "https://github.com/yaturner/tcamDesktop",
+    "screenshot": "/assets/projects/tcamdesktop.png",
+    "status": "active",
+    "tags": []
+  },
+  {
+    "slug": "tcamviewer2",
+    "name": "tcamViewer2",
+    "tagline": "TODO: one line describing tcamViewer2.",
+    "owner": "yaturner",
+    "repo": "tcamViewer2",
+    "branch": "main",
+    "url": "https://github.com/yaturner/tcamViewer2",
+    "screenshot": "/assets/projects/tcamviewer2.png",
+    "status": "active",
+    "tags": []
+  }
+]

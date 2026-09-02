@@ -1,0 +1,38 @@
+# Copy this into EACH project repo as .github/workflows/notify-hub.yml
+#
+# It tells the darcangel-projects hub to rebuild whenever this repo's README or
+# images change, so the project page there stays in sync without waiting for the
+# hub's nightly build.
+#
+# Setup (once per project repo):
+#   1. Create a fine-grained PAT that can trigger workflows on
+#      yaturner/darcangel-projects  (Repository access: darcangel-projects;
+#      Permissions: Contents = read, Metadata = read, Actions = read/write).
+#   2. In this repo: Settings -> Secrets and variables -> Actions -> New
+#      repository secret, name HUB_DISPATCH_TOKEN, paste the PAT.
+#
+# Adjust `branches` below if this repo's default branch is not `main`
+# (myWeatherPanel, for example, uses `master`).
+
+name: Notify projects hub
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "README.md"
+      - "images/**"
+      - "docs/**"
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch rebuild
+        run: |
+          curl -sSf -X POST \
+            -H "Authorization: Bearer ${{ secrets.HUB_DISPATCH_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/yaturner/darcangel-projects/dispatches \
+            -d '{"event_type":"readme-updated"}'

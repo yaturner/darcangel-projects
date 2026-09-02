@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title or site.title }}</title>
+    <meta name="description" content="{{ description or site.description }}" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">{{ site.title }}</a>
+      <nav>
+        {%- for p in projects %}
+        <a href="/{{ p.slug }}/"{% if page.url == "/" + p.slug + "/" %} aria-current="page"{% endif %}>{{ p.name }}</a>
+        {%- endfor %}
+      </nav>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Built with <a href="https://www.11ty.dev/">Eleventy</a> ·
+        <a href="{{ site.repo }}">Source</a>
+      </p>
+    </footer>
+  </body>
+</html>

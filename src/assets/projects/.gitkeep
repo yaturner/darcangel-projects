@@ -1,0 +1,3 @@
+# Put each project's screenshot here, named to match its slug in
+# src/_data/projects.json, e.g. weatherpanel.jpg, tcamdesktop.png,
+# tcamviewer2.png. Referenced from templates as /assets/projects/<slug>.<ext>.
