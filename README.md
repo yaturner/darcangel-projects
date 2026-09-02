@@ -50,10 +50,13 @@ docs/trigger-rebuild.yml      workflow to copy into each project repo
 
 `owner` / `repo` / `branch` are used to fetch `README.md` from
 `raw.githubusercontent.com` and to rewrite repo-relative image paths in it to
-absolute URLs, so screenshots embedded in the README resolve.
+absolute URLs, so screenshots embedded in the README resolve. Set `branch` to
+the repo's actual default branch (it varies: `myWeatherPanel` and `tcamViewer2`
+use `master`, `tcamViewerDesktop` uses `main`).
 
-> Check `branch` for each entry — `main` is assumed, but `myWeatherPanel` uses
-> `master`. `tcamDesktop` / `tcamViewer2` taglines are placeholders.
+The `screenshot` key is optional — omit it and the card/page just skips the
+image. `tcamViewerDesktop` and `tcamViewer2` have none yet; add
+`src/assets/projects/<slug>.<ext>` and the key when you have one.
 
 ## Local development
 

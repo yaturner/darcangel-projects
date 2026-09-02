@@ -2,7 +2,7 @@
   {
     "slug": "weatherpanel",
     "name": "myWeatherPanel",
-    "tagline": "An LED-matrix weather and news panel for a Raspberry Pi.",
+    "tagline": "A Raspberry Pi that shows weather and news headlines on an RGB LED matrix.",
     "owner": "yaturner",
     "repo": "myWeatherPanel",
     "branch": "master",
@@ -13,26 +13,24 @@
   },
   {
     "slug": "tcamdesktop",
-    "name": "tcamDesktop",
-    "tagline": "TODO: one line describing tcamDesktop.",
+    "name": "tcamViewerDesktop",
+    "tagline": "A Linux/desktop viewer for the tCam thermal imaging camera — a Compose Multiplatform Desktop port of tcamViewer2.",
     "owner": "yaturner",
-    "repo": "tcamDesktop",
+    "repo": "tcamViewerDesktop",
     "branch": "main",
-    "url": "https://github.com/yaturner/tcamDesktop",
-    "screenshot": "/assets/projects/tcamdesktop.png",
+    "url": "https://github.com/yaturner/tcamViewerDesktop",
     "status": "active",
-    "tags": []
+    "tags": ["kotlin", "compose-multiplatform", "desktop"]
   },
   {
     "slug": "tcamviewer2",
     "name": "tcamViewer2",
-    "tagline": "TODO: one line describing tcamViewer2.",
+    "tagline": "A ground-up Kotlin rewrite of tCamViewer for viewing and saving tCam thermal images.",
     "owner": "yaturner",
     "repo": "tcamViewer2",
-    "branch": "main",
+    "branch": "master",
     "url": "https://github.com/yaturner/tcamViewer2",
-    "screenshot": "/assets/projects/tcamviewer2.png",
     "status": "active",
-    "tags": []
+    "tags": ["kotlin", "android"]
   }
 ]
