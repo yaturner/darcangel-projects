@@ -10,21 +10,21 @@ eleventyComputed:
   description: "{{ project.tagline }}"
 ---
 <article class="project">
-  <p class="crumb"><a href="/">&larr; all projects</a></p>
+  <p class="crumb"><a href="/">&larr; All projects</a></p>
 
   <header class="project-head">
     <h1>{{ project.name }}</h1>
     <p class="tagline">{{ project.tagline }}</p>
-    <p class="links">
-      <a href="{{ project.url }}">Repository</a>
-      <a href="{{ project.url }}/releases">Releases</a>
-      <a href="{{ project.url }}#readme">README on GitHub</a>
-    </p>
     {%- if project.tags and project.tags.length %}
     <p class="tags">
       {%- for t in project.tags %}<span class="tag">{{ t }}</span>{% endfor %}
     </p>
     {%- endif %}
+    <p class="links">
+      <a class="btn btn-primary" href="{{ project.url }}">Repository</a>
+      <a class="btn" href="{{ project.url }}/releases">Releases</a>
+      <a class="btn" href="{{ project.url }}#readme">README on GitHub</a>
+    </p>
   </header>
 
   {%- if project.screenshot %}
