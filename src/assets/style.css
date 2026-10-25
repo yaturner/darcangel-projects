@@ -540,3 +540,38 @@ main {
 .readme img {
   border-radius: 6px;
 }
+
+/* ---- lightbox (click a hero/README screenshot to view full size) ---- */
+
+.lightbox-trigger {
+  cursor: zoom-in;
+}
+
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(10, 10, 14, 0.88);
+  cursor: zoom-out;
+  animation: lightbox-fade-in 0.15s ease;
+}
+
+.lightbox-overlay img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  box-shadow: var(--shadow-lg);
+}
+
+@keyframes lightbox-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
