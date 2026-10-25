@@ -6,7 +6,7 @@
     <title>{{ title or site.title }}</title>
     <meta name="description" content="{{ description or site.description }}" />
     <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Ctext x='32' y='45' font-family='system-ui,sans-serif' font-size='34' font-weight='700' fill='white' text-anchor='middle'%3Ed%3C/text%3E%3C/svg%3E" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Ctext x='32' y='45' font-family='system-ui,sans-serif' font-size='34' font-weight='700' fill='white' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -14,7 +14,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">d</span>{{ site.title }}</a>
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">D</span>{{ site.title }}</a>
       <nav>
         {%- for p in projects %}
         <a href="/{{ p.slug }}/"{% if page.url == "/" + p.slug + "/" %} aria-current="page"{% endif %}>{{ p.name }}</a>
