@@ -33,5 +33,27 @@
     "screenshot": "/assets/projects/tcamviewer2.png",
     "status": "active",
     "tags": ["kotlin", "android"]
+  },
+  {
+    "slug": "tcamviewer2-rpi",
+    "name": "tcamViewer2-rpi",
+    "tagline": "A Raspberry Pi (arm64) port of tcamViewerDesktop for viewing tCam thermal cameras.",
+    "owner": "yaturner",
+    "repo": "tcamViewer2-rpi",
+    "branch": "main",
+    "url": "https://github.com/yaturner/tcamViewer2-rpi",
+    "status": "active",
+    "tags": ["kotlin", "compose-multiplatform", "raspberry-pi"]
+  },
+  {
+    "slug": "p1stouchscreen-rpi",
+    "name": "p1sTouchScreen-RPI",
+    "tagline": "A PySide6 touchscreen GUI for a Raspberry Pi that controls a Bambu Lab P1S over local WiFi, emulating the Bambu A1's onboard control screens.",
+    "owner": "yaturner",
+    "repo": "p1sTouchScreen-RPI",
+    "branch": "master",
+    "url": "https://github.com/yaturner/p1sTouchScreen-RPI",
+    "status": "active",
+    "tags": ["python", "pyside6", "raspberry-pi", "3d-printing"]
   }
 ]
