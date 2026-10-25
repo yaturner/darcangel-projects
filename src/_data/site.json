@@ -2,6 +2,7 @@
   "title": "darcangel projects",
   "description": "Hardware and software projects by Jim Turner - thejmturner@pm.me.",
   "url": "https://projects.darcangel.com",
-  "author": "Jim Turner - thejmturner@pm.me",
+  "author": "Jim Turner",
+  "authorEmail": "thejmturner@pm.me",
   "repo": "https://github.com/yaturner/darcangel-projects"
 }
