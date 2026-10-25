@@ -19,6 +19,7 @@
     "repo": "tcamViewerDesktop",
     "branch": "main",
     "url": "https://github.com/yaturner/tcamViewerDesktop",
+    "screenshot": "/assets/projects/tcamdesktop.png",
     "status": "active",
     "tags": ["kotlin", "compose-multiplatform", "desktop"]
   },
