@@ -42,6 +42,7 @@
     "repo": "tcamViewer2-rpi",
     "branch": "main",
     "url": "https://github.com/yaturner/tcamViewer2-rpi",
+    "screenshot": "/assets/projects/tcamviewer2-rpi.png",
     "status": "active",
     "tags": ["kotlin", "compose-multiplatform", "raspberry-pi"]
   },
@@ -53,6 +54,7 @@
     "repo": "p1sTouchScreen-RPI",
     "branch": "master",
     "url": "https://github.com/yaturner/p1sTouchScreen-RPI",
+    "screenshot": "/assets/projects/p1stouchscreen-rpi.png",
     "status": "active",
     "tags": ["python", "pyside6", "raspberry-pi", "3d-printing"]
   }
