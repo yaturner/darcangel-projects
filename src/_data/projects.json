@@ -61,7 +61,7 @@
   },
   {
     "slug": "bambuwatch",
-    "name": "BambuWatch",
+    "name": "printWatcher",
     "tagline": "A Wear OS watch app and Android phone companion that show a Bambu Lab printer's progress on your wrist — tile, watch-face complication and alerts, all over the local network.",
     "owner": "yaturner",
     "repo": "BambuWatch",
