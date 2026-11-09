@@ -58,5 +58,17 @@
     "screenshot": "/assets/projects/p1stouchscreen-rpi.png",
     "status": "active",
     "tags": ["python", "pyside6", "raspberry-pi", "3d-printing"]
+  },
+  {
+    "slug": "bambuwatch",
+    "name": "BambuWatch",
+    "tagline": "A Wear OS watch app and Android phone companion that show a Bambu Lab printer's progress on your wrist — tile, watch-face complication and alerts, all over the local network.",
+    "owner": "yaturner",
+    "repo": "BambuWatch",
+    "branch": "main",
+    "url": "https://github.com/yaturner/BambuWatch",
+    "screenshot": "/assets/projects/bambuwatch.png",
+    "status": "active",
+    "tags": ["kotlin", "android", "wear-os", "3d-printing"]
   }
 ]
