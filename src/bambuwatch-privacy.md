@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
 **printWatcher for Bambu Lab** ("the app") is a phone app and Wear OS watch app that show a Bambu Lab
 3D printer's status. It is made by Jim Turner. This policy covers both apps.
 
-*Effective November 9, 2026.*
+*Effective November 10, 2026.*
 
 ## Summary
 
@@ -37,6 +37,10 @@ can delete yourself.
 
 - The phone app connects **only to your printer, on your local network** (MQTT over TLS). It does
   not contact Bambu Lab's cloud, the developer, or any other server.
+- While the printer setup screen is open, the app **listens** for the announcements Bambu Lab
+  printers broadcast on your local network (UDP port 2021), so it can list your printer and fill
+  in its IP address and serial number. It doesn't send anything to do this, and the list isn't
+  saved or shared.
 - Printer status is sent from your phone to your watch using **Google Play services' Wear OS Data
   Layer**, the standard way Wear OS apps talk to their phone app. Depending on how your devices are
   connected, Google Play services may relay this through Google's servers. Only print status is
@@ -55,6 +59,7 @@ are generated on your phone from your printer's status.
 | Internet / network state | Connect to your printer on your local network. |
 | Notifications | Print finished, problem and connection alerts. |
 | Foreground service (connected device) | Keep the connection to your printer while the app is in the background, so alerts arrive on time. |
+| Wi-Fi multicast | Hear printer announcements on your local network to find your printer during setup. |
 | Run at startup | Resume monitoring after the phone restarts, if monitoring is on. |
 | All files access (GitHub version only) | Save and restore the optional settings file in Documents. |
 
