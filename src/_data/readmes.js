@@ -28,6 +28,12 @@ function absolutizeImages(markdown, project) {
     .replace(
       /(<img[^>]+src=["'])(?!https?:|data:)\/?([^"']+)(["'])/gi,
       (_m, pre, rel, post) => `${pre}${base}${rel}${post}`
+    )
+    // repo-relative links (not images, anchors or absolute URLs) -> the file on GitHub
+    .replace(
+      /((?:^|[^!])\[[^\]]*\]\()(?!https?:|mailto:|#)\/?([^)\s]+)(\))/g,
+      (_m, pre, rel, post) =>
+        `${pre}https://github.com/${project.owner}/${project.repo}/blob/${project.branch}/${rel}${post}`
     );
 }
 

@@ -80,6 +80,7 @@
     "branch": "main",
     "url": "https://github.com/yaturner/tcam-p1s-mount",
     "screenshot": "/assets/projects/tcam-p1s-mount.png",
+    "links": [{"label": "Assembly guide (PDF)", "url": "https://github.com/yaturner/tcam-p1s-mount/blob/main/docs/corner_assembly.pdf"}],
     "status": "active",
     "tags": ["openscad", "3d-printing", "thermal-imaging"]
   }

@@ -24,6 +24,9 @@ eleventyComputed:
       <a class="btn btn-primary" href="{{ project.url }}">Repository</a>
       <a class="btn" href="{{ project.url }}/releases">Releases</a>
       <a class="btn" href="{{ project.url }}#readme">README on GitHub</a>
+      {%- for l in project.links %}
+      <a class="btn" href="{{ l.url }}">{{ l.label }}</a>
+      {%- endfor %}
     </p>
   </header>
 
