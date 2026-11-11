@@ -70,5 +70,17 @@
     "screenshot": "/assets/projects/bambuwatch.png",
     "status": "active",
     "tags": ["kotlin", "android", "wear-os", "3d-printing"]
+  },
+  {
+    "slug": "tcam-p1s-mount",
+    "name": "tCam-Mini P1S Mount",
+    "tagline": "A 3D-printed case and pin-locked tilting mount that puts a tCam-Mini thermal camera in the front-left corner of a Bambu Lab P1S fitted with the Vented LED Riser.",
+    "owner": "yaturner",
+    "repo": "tcam-p1s-mount",
+    "branch": "main",
+    "url": "https://github.com/yaturner/tcam-p1s-mount",
+    "screenshot": "/assets/projects/tcam-p1s-mount.png",
+    "status": "active",
+    "tags": ["openscad", "3d-printing", "thermal-imaging"]
   }
 ]
