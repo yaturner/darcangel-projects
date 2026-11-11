@@ -83,5 +83,18 @@
     "links": [{"label": "Assembly guide (PDF)", "url": "https://github.com/yaturner/tcam-p1s-mount/blob/main/docs/corner_assembly.pdf"}],
     "status": "active",
     "tags": ["openscad", "3d-printing", "thermal-imaging"]
+  },
+  {
+    "slug": "tcam-a1-mount",
+    "name": "tCam-Mini A1 Mount",
+    "tagline": "A one-piece 3D-printed bracket that hangs a tCam-Mini thermal camera from the filament-cutter trigger of a Bambu Lab A1, with a pin-locked 20–60° tilt.",
+    "owner": "yaturner",
+    "repo": "tcam-a1-mount",
+    "branch": "main",
+    "url": "https://github.com/yaturner/tcam-a1-mount",
+    "screenshot": "/assets/projects/tcam-a1-mount.png",
+    "links": [{"label": "Assembly guide (PDF)", "url": "https://github.com/yaturner/tcam-a1-mount/blob/main/docs/a1_assembly.pdf"}],
+    "status": "active",
+    "tags": ["openscad", "3d-printing", "thermal-imaging"]
   }
 ]
